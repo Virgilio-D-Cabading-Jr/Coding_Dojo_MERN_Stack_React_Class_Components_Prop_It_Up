@@ -1,10 +1,13 @@
 import React, { Component } from "react";
 
-class PersonCard extends React.Component {
+class PersonCard extends Component {
     render() {
+        const { firstName, lastName, age, hairColor } = this.props;
         return (
             <div>
-                Testinmg;
+                <h1>{lastName}, { firstName }</h1>
+                <p>Age: { age }</p>
+                <p>Hair Color: { hairColor }</p>
             </div>
         );
     }
