@@ -10,15 +10,12 @@ class PersonCard extends Component {
             age : this.props.age,
             hairColor : this.props.hairColor
         };
-        this.firstName = this.props.firstName;
-        this.lastName = this.props.lastName;
-        this.age = this.props.age;
-        this.hairColor = this.props.hairColor;
     }
 
     render() {
 
         return (
+            
             <div>
                 <h1>{this.state.lastName}, {this.state.firstName}</h1>
                 <p>Age: {this.state.age}</p>
