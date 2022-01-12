@@ -15,11 +15,20 @@ class LightSwitch extends Component {
     
     render() {
         return (
-            <fieldset>
+            <div>
                 <p>The light is currently { this.state.position }</p>
-                <button>Flip Switch</button>
-            </fieldset>
+                <br />
+                <button onClick={ this.flipSwitch }>Flip Switch</button>
+            </div>
         );
+    }
+
+    flipSwitch = () => {
+        if( this.state.position === "On" ) {
+            this.setState({ position: "Off" });
+        } else {
+            this.setState({ position: "On" });
+        }
     }
 }
                 
